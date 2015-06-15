@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="utf-8">
+    <meta name="description" content="SAF">
+    <meta name="author" content="SAF">
+    <meta name="keywords" content="SAF">
+    <title>SAF | Welcome</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/saf-custom.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,700' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+      <div class="container">
+          <div class="col-centered col-xs-8">
+            <img class="img-responsive extra-top-lg center-block dim" src="saf_log_white.png" id="logo">
+            <br><br><br>
+          </div>
+        
+        <div class="row">
+          <div class="col-centered col-xs-12">
+            <h1 class="green-font text-center lato-100 transparent" id="hooker">Transact with ease</h1>
+          </div>
+          <div class="col-centered col-xs-12">
+            <p class="text-center white-font font-24 lato-100 transparent" id="explainer">Digitizing the alternative funds universe</p>
+          </div>
+          
+          
+        </div>
+        <br><br><br>
+          <div class="col-md-5 col-centered center-block">
+            <div class="center-block transparent" id="actionButtonContainer">
+              <button class="btn btn-lg center-block btn-primary-saf wide-track wide-action-button" id="actionButton">Sign Up for Early Access ≫</button>
+            </div><!-- /center-block -->
+            <form class="block" id="emailForm" action="http://httpbin.org/post">
+              <div class="input-group transparent" id="emailFormGroup">
+              <input type="text" class="form-control saf-input" placeholder="Email Address" id="emailAddress">
+                <span class="input-group-btn">
+                  <input class="btn btn-primary-saf saf-email-submit wide-track wide-submit" type="submit" id="formSubmit">Submit</input>
+                </span>
+              </div><!-- /input-group -->
+            </form>
+            <p class="text-center white-font transparent thank-you-box" id="messageBox">Thanks.  We'll be in touch soon.</p>
+          </div>
+
+          <div id="institutionActionButton">
+            <br>
+            <div class="text-center">
+              <a href="#" id="institutionalLink" data-toggle="modal" data-target="#institutionalModal" class="transparent">Institutional Client?</a>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade little-top" id="institutionalModal" tabindex="-1" role="dialog" aria-labelledby="institutionalModalLabel" aria-hidden="true">
+            <div class="modal-dialog smaller-modal-body">
+              <div class="modal-content sharp-corners">
+                <div class="modal-header no-bottom-border modal-header-padding" id="modal-header">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    
+                  </div>
+                  <h4 class="modal-title" id="myModalLabel"><span class="lato-700">SAF</span> Institutional</h4>
+                </div>
+                <div class="modal-body no-padding-top modal-body-padding" id="modal-body">
+                  <p class="font-18 padding-bottom-15" id="institutionalContent">SAF’s white label technology can help your entire organization transact seamlessly on alternatives. Drop us a line and we’ll help you find the right solution.</p>
+                  <form id="institutionalForm" action="http://httpbin.org/post">
+                    <input class="form-control block saf-input" type="text" placeholder="Company Name" required id="companyName"><br>
+                    <input class="form-control block saf-input" type="text" placeholder="First Name" required id="firstName"><br>
+                    <input class="form-control block saf-input" type="text" placeholder="Last Name" required id="lastName"><br>
+                    <input class="form-control block saf-input" type="email" placeholder="Email Address" required id="institutionalEmail">
+                    <br>
+                    <div class="row">
+                      <div class="col-md-6 text-left">
+                        <p class="required-fields-help" id="institutionalHelp">All fields are required</p>
+                      </div>
+                      <div class="col-md-6 text-right">
+                        <button type="submit" class="btn btn-primary-saf wide-submit" id="institutionalSubmit">Submit</button>
+                      </div>
+                    </div>
+                    
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+      </div><!-- /container -->
+      <br>
+      <br>
+    <div class="container little-top little-bottom text-center transparent" id="footer">
+      <footer class="text-center footer-grey-font">© 2015 Strategic Alternative Funds, LLC</footer>
+    </div><!-- /containter.footer -->
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/saf.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+  </body>
+</html>
