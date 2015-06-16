@@ -22,15 +22,18 @@ $(function(){
 
 	// Institutional forms and IDs
 	var institutionalLink = $("#institutionalLink");
-	var institutionalSubmit = $("#institutionalSubmit");
 	var institutionalForm = $("#institutionalForm");
+	var institutionalSubmit = $("#institutionalSubmit");
+	var institutionalContent = $("#institutionalContent");
+	var institutionalModalTitle = $("#institutionalModalTitle");
+
 	var institutionalCompanyName = $("#companyName");
 	var institutionalFirstName = $("#firstName");
 	var institutionalLastName = $("#lastName");
 	var institutionalEmail = $("#institutionalEmail");
 	var institutionalHelp = $("#institutionalHelp");
-
-
+	var institutionalThanks = $("#institutionalThanks");
+	institutionalThanks.hide();
 
 	// Fade in the elements
 		$("#hooker").fadeTo(500, 1);
@@ -66,7 +69,7 @@ $(function(){
     	console.log("Posting to: ")
     	console.log(url);
 
-    	posting.success(function(data){
+    	posting.done(function(data){
     		console.log("Success")
     		emailForm.fadeOut(function(){
     			$("#messageBox").show();
@@ -96,14 +99,17 @@ $(function(){
     		console.log("Success")
     		institutionalForm.fadeOut();
     		$(".modal-content").animate({height:"160px"}, 500);
-    		$("#institutionalContent").text("Thanks.  We'll be in touch soon.").attr("class", "text-center font-18 padding-bottom-15 green-font")
+    		institutionalContent.hide();
+    		institutionalModalTitle.hide();
+    		institutionalThanks.show();
     		
     	});
 
     	posting.fail(function(data){
     		console.log("Failure.  See data:  ")
     		console.log(data)
-    		institutionalHelp.text("Hey.  Something went wrong.");
+    		institutionalHelp.text("Hey.  Something went wrong.  Deb will replace this with a better error message.");
+    		institutionalHelp.css("color","#F07B00");
     	});
 	});
 

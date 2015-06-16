@@ -4,6 +4,11 @@ body {
   font-weight: 300;
 }
 
+.light-grey-background{
+  background-color: #4B4B56;
+}
+
+/*Fonts*/
 .lato-100{
   font-weight: 100;
 }
@@ -12,15 +17,11 @@ body {
   font-weight: 700;
 }
 
-.light-grey-background{
-  background-color: #4B4B56;
-}
-
-.font-24{
+.font-big{
   font-size: 24px;
 }
 
-.font-18{
+.font-medium{
   font-size: 18px;
 }
 
@@ -30,6 +31,10 @@ body {
 
 .white-font {
   color: white;
+}
+
+.extra-top-lg {
+  margin-top: 25%;
 }
 
 .extra-top {
@@ -42,10 +47,6 @@ body {
 
 .little-bottom{
   margin-bottom: 5%;
-}
-
-.extra-top-lg {
-	margin-top: 25%;
 }
 
 .btn-primary-saf {
@@ -227,15 +228,15 @@ a,a:hover,a:active,a:focus {
   height:52px;
   line-height: 52px;
   margin-bottom: 0px;
-
 }
 
 .thank-you-modal{
   height: 160px;
 }
 
+/*For iPhone 6*/
 @media (max-width: 480px) { 
-  .font-24{
+  .font-big{
     font-size: 18px;
   }
 
@@ -244,16 +245,29 @@ a,a:hover,a:active,a:focus {
   }
 
   .smaller-modal-body{
-    width: 350px;
+    width: 95%;
   }
 
   .wide-submit {
-    width:100px;
+    width:90px;
   }
+
 }
 
-/* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
+@media (max-width: 320px) and (min-width: 100px){
+  .font-big{
+    font-size: 16px;
+  }
 
+  h1{
+    font-size: 24px;
+  }
 
+  .wide-submit {
+    width:80px;
+  }
+
+  .wide-action-button {
+  width: 230px;
+}
 }
