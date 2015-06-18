@@ -17,6 +17,9 @@ $(function(){
 	// ID for the submit button for the email form
 	var formSubmit = $("#formSubmit");
 
+	// ID for email submission confirmation
+	var formConfirmation = $("#messageBox");
+
 	// ID for the form tag of email address form (this is different from emailFormGroup)
 	var emailForm = $("#emailForm");
 
@@ -72,9 +75,10 @@ $(function(){
     	posting.done(function(data){
     		console.log("Success")
     		emailForm.fadeOut(function(){
-    			$("#messageBox").show();
-    			$("#messageBox").text("Thanks! You're first in line for our beta.");
-    			$("#messageBox").fadeTo(500, 1);
+    			formConfirmation.show();
+    			formConfirmation.text("Thanks! You're first in line for our beta.");
+    			formConfirmation.css("font-size","18px")
+    			formConfirmation.fadeTo(500, 1);
     		});
 
     	});
@@ -95,13 +99,19 @@ $(function(){
 		var url = institutionalForm.attr("action");
 		var posting = $.post(url, {emailAddress:emailAddressInput.val()});
 
+		var modalHeightInitial = $(".modal-content").css("height");
+
 		posting.done(function(data){
     		console.log("Success")
-    		institutionalForm.fadeOut();
-    		$(".modal-content").animate({height:"160px"}, 500);
-    		institutionalContent.hide();
-    		institutionalModalTitle.hide();
-    		institutionalThanks.show();
+    		institutionalForm.fadeOut(250);
+    		$(".modal-content").animate({modalHeightInitial}, 500);
+    		institutionalContent.fadeOut(250);
+    		institutionalModalTitle.fadeOut(250, function(){
+    			institutionalThanks.css("padding-top", "15%");
+    			institutionalThanks.fadeIn();
+
+    		});
+    		
     		
     	});
 
