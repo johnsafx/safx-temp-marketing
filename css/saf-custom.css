@@ -17,6 +17,10 @@ body {
   font-weight: 700;
 }
 
+.font-extra-big{
+  font-size: 70px;
+}
+
 .font-big{
   font-size: 24px;
 }
@@ -180,6 +184,10 @@ a,a:hover,a:active,a:focus {
   width: 500px;
 }
 
+.modal-content{
+  height: 568px;
+}
+
 .sharp-corners{
   border-radius: 0px;
 }
@@ -234,6 +242,11 @@ a,a:hover,a:active,a:focus {
   height: 160px;
 }
 
+.modal-closer{
+  font-size: 40px;
+  font-weight: 100;
+}
+
 /*For iPhone 6*/
 @media (max-width: 480px) { 
   .font-big{
@@ -250,6 +263,11 @@ a,a:hover,a:active,a:focus {
 
   .wide-submit {
     width:90px;
+  }
+
+  .modal-content{
+    height: 618px;
+    
   }
 
 }
@@ -269,5 +287,10 @@ a,a:hover,a:active,a:focus {
 
   .wide-action-button {
   width: 230px;
-}
+  }
+
+  .modal-content{
+    height: 630px;  
+  }
+
 }
