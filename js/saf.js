@@ -76,8 +76,9 @@ $(function(){
     		console.log("Success")
     		emailForm.fadeOut(function(){
     			formConfirmation.show();
-    			formConfirmation.text("Thanks! You're first in line for our beta.");
-    			formConfirmation.css("font-size","18px")
+    			formConfirmation.text("Thank you.  We'll be in touch.");
+    			formConfirmation.css("font-size","16px")
+    			formConfirmation.css("font-weight","100")
     			formConfirmation.fadeTo(500, 1);
     		});
 
