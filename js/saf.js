@@ -38,7 +38,6 @@ $(function(){
         	$("#actionButtonContainer").fadeOut(0, function(){
         		emailFormGroup.show().css("display", "table")
         		emailAddressInput.focus();
-        		institutionalLink.fadeTo(1000, 1.0);
         	});       	
         });
     });
