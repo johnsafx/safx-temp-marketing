@@ -251,7 +251,23 @@ a,a:hover,a:active,a:focus {
 
   .explainer-font-size{
     font-size: 26px;
+  }
 
+  .wide-action-button {
+    width: 230px;
+    height: 56px;
+    font-size: 18px;
+  }
+
+  .saf-input{
+    height:56px;
+    border-radius: 2px;
+    font-size: 18px;
+  }
+
+  .saf-email-submit{
+    height:56px;
+    font-size: 18px;
   }
 }
 
