@@ -13,8 +13,8 @@
 </head>
 <body>
   <div class="container">
-    <div class="col-centered col-xs-8 col-sm-6 col-md-4">
-      <img class="img-responsive extra-top-lg center-block dim" src="saf_log_white.png" id="logo" width="260px">
+    <div class="col-centered col-xs-8 col-sm-6 col-md-6">
+      <img class="img-responsive extra-top-lg center-block dim logo-width" src="saf_log_white.png" id="logo">
       <div class="logo-spacer"></div>
     </div>
     <div class="row">
@@ -28,13 +28,13 @@
 
     <br>
 
-    <div class="col-md-5 col-sm-8 col-centered center-block">
+    <div class="col-md-6 col-sm-8 col-lg-4 col-centered center-block">
       <div class="center-block transparent" id="actionButtonContainer">
         <button class="btn btn-lg center-block btn-primary-saf wide-track wide-action-button" id="actionButton">I'm interested ≫</button>
       </div><!-- /center-block -->
       <form class="block" id="emailForm" action="http://httpbin.org/post">
         <div class="input-group transparent" id="emailFormGroup">
-          <input type="text" class="form-control saf-input" placeholder="Email Address" id="emailAddress">
+          <input type="email" class="form-control saf-input" placeholder="Email Address" id="emailAddress" required>
           <span class="input-group-btn">
             <input class="btn btn-primary-saf saf-email-submit wide-track wide-submit" type="submit" id="formSubmit">Submit</input>
           </span>
@@ -45,7 +45,7 @@
 
   </div><!-- /container -->
   <div class="container little-top little-bottom text-center transparent" id="footer">
-    <footer class="text-center footer-grey-font sticky-footer">© 2015 SAF</footer>
+    <footer class="text-center footer-grey-font sticky-footer">© 2015 Strategic Alternative Funds Group, LLC. All Rights Reserved.</footer>
   </div><!-- /containter.footer -->
 
   <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
