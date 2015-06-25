@@ -23,21 +23,6 @@ $(function(){
 	// ID for the form tag of email address form (this is different from emailFormGroup)
 	var emailForm = $("#emailForm");
 
-	// Institutional forms and IDs
-	var institutionalLink = $("#institutionalLink");
-	var institutionalForm = $("#institutionalForm");
-	var institutionalSubmit = $("#institutionalSubmit");
-	var institutionalContent = $("#institutionalContent");
-	var institutionalModalTitle = $("#institutionalModalTitle");
-
-	var institutionalCompanyName = $("#companyName");
-	var institutionalFirstName = $("#firstName");
-	var institutionalLastName = $("#lastName");
-	var institutionalEmail = $("#institutionalEmail");
-	var institutionalHelp = $("#institutionalHelp");
-	var institutionalThanks = $("#institutionalThanks");
-	institutionalThanks.hide();
-
 	// Fade in the elements
 		$("#hooker").fadeTo(500, 1);
 		$("#explainer").fadeTo(500, 1, function(){
@@ -90,38 +75,5 @@ $(function(){
     		emailAddressInput.val("Something went wrong.  Try again?");
     	});
     });
-
-    /*
-	* Institutional interest form submit handler
-	*/
-	institutionalSubmit.click(function(event){
-		event.preventDefault();
-
-		var url = institutionalForm.attr("action");
-		var posting = $.post(url, {emailAddress:emailAddressInput.val()});
-
-		var modalHeightInitial = $(".modal-content").css("height");
-
-		posting.done(function(data){
-    		console.log("Success")
-    		institutionalForm.fadeOut(250);
-    		$(".modal-content").animate({modalHeightInitial}, 500);
-    		institutionalContent.fadeOut(250);
-    		institutionalModalTitle.fadeOut(250, function(){
-    			institutionalThanks.css("padding-top", "15%");
-    			institutionalThanks.fadeIn();
-
-    		});
-    		
-    		
-    	});
-
-    	posting.fail(function(data){
-    		console.log("Failure.  See data:  ")
-    		console.log(data)
-    		institutionalHelp.text("Hey.  Something went wrong.  Deb will replace this with a better error message.");
-    		institutionalHelp.css("color","#F07B00");
-    	});
-	});
 
 });
