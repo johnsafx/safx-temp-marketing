@@ -46,7 +46,7 @@ body {
 }
 
 .extra-top-lg {
-  margin-top: 35%;
+  margin-top: 200px;
 }
 
 .extra-top {
@@ -249,6 +249,24 @@ h1{
 
 /*For iPhone 6*/
 @media (max-width: 480px) {
+
+	.sticky-footer{
+	  position:relative;
+		margin-top: 200px;
+	 	bottom:0px;
+	 	left: 0px;
+	 	right: 0px;
+	 	height:40px;
+	}
+
+	.lato-100{
+		font-weight: 300;
+	}
+
+	.extra-top-lg {
+	  margin-top: 150px;
+	}
+
   .font-big{
     font-size: 18px;
   }
@@ -267,7 +285,7 @@ h1{
 
   .footer-grey-font {
     color: #787878;
-    font-size: 12px;
+    font-size: 10px;
   }
 
 	.wide-action-button {
@@ -290,6 +308,24 @@ h1{
 
 /*iPhone 5*/
 @media (max-width: 320px) and (min-width: 100px){
+
+	.sticky-footer{
+		position:relative;
+		margin-top: 120px;
+		bottom:0px;
+		left: 0px;
+		right: 0px;
+		height:40px;
+	}
+
+	.lato-100{
+		font-weight: 300;
+	}
+
+	.extra-top-lg {
+	  margin-top: 130px;
+	}
+
   .font-big{
     font-size: 16px;
   }
