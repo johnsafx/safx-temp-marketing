@@ -142,12 +142,7 @@ fieldset[disabled] .btn-primary-saf.active {
 }
 
 .sticky-footer{
-  position:relative;
-	margin-top: 10%;
-   bottom:0px;
-   left: 0px;
-   right: 0px;
-   height:40px;
+	margin-top: 190px;
  }
 
 .saf-input{
@@ -252,13 +247,8 @@ h1{
 @media (max-width: 480px) {
 
 	.sticky-footer{
-	  position:relative;
-		margin-top: 60%;
-	 	bottom:0px;
-	 	left: 0px;
-	 	right: 0px;
-	 	height:40px;
-	}
+		margin-top: 190px;
+	 }
 
 	.lato-100{
 		font-weight: 300;
