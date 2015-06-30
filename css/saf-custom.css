@@ -142,12 +142,7 @@ fieldset[disabled] .btn-primary-saf.active {
 }
 
 .sticky-footer{
-  position:relative;
-	margin-top: 10%;
-   bottom:0px;
-   left: 0px;
-   right: 0px;
-   height:40px;
+	margin-top: 190px;
  }
 
 .saf-input{
@@ -252,13 +247,8 @@ h1{
 @media (max-width: 480px) {
 
 	.sticky-footer{
-	  position:relative;
-		margin-top: 60%;
-	 	bottom:0px;
-	 	left: 0px;
-	 	right: 0px;
-	 	height:40px;
-	}
+		margin-top: 190px;
+	 }
 
 	.lato-100{
 		font-weight: 300;
@@ -311,13 +301,8 @@ h1{
 @media (max-width: 320px) and (min-width: 100px){
 
 	.sticky-footer{
-		position:relative;
-		margin-top: 50%;
-		bottom:0px;
-		left: 0px;
-		right: 0px;
-		height:40px;
-	}
+		margin-top: 190px;
+	 }
 
 	.lato-100{
 		font-weight: 300;
@@ -345,6 +330,6 @@ h1{
 
   .footer-grey-font {
     color: #787878;
-    font-size: 10px;
+    font-size: 9px;
   }
 }
